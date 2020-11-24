@@ -19,7 +19,7 @@
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
- <script src="Admin_view_2.js"></script>
+ <script src="user_view_2.js"></script>
 
 </head>
 <body>
@@ -62,136 +62,157 @@
     </nav>
 
     <!--menu bar-->
-    <div id="sidebar" class="col-sm-2">
-        
-        <ul class="list-items">
-            <li class="nav-item "><a class="nav-link active show" data-toggle="tab" href="#wedding" onclick="disp1()">Wedding</a><button class="btn  btn-sm rounded-0 " type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash btn_delete"></i></button></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#anniversery_party" onclick="disp2()">Anniversery Party</a><button class="btn  btn-sm rounded-0 " type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash btn_delete"></i></button></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#birthday_party" onclick="disp3()">Birthday Party</a><button class="btn  btn-sm rounded-0 " type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash btn_delete"></i></button></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Farewell_party" onclick="disp3()">Farewell Party </a><button class="btn  btn-sm rounded-0 " type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash btn_delete"></i></button></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Halloween_party">Halloween Party</a><button class="btn  btn-sm rounded-0 " type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash btn_delete"></i></button></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Concert">Concert</a><button class="btn  btn-sm rounded-0 " type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash btn_delete"></i></button></li>
-            <li class="nav-item plus_li" data-toggle="tooltip" title="Click here to add new Category"><a class="nav-link plus_a" data-toggle="tab" href="#Concert" data-toggle="tooltip" title="Click here to add new Category"></a><i class="fa fa-plus-circle btn_plus"></i></button></li>
-        </ul>
+    <div  class="container-fixed">
+        <div class="row main_row">
+            
+            <div id="sidebar" class=" col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+
+
+                <!--<div class=" row slidebar_items_row">
+
+    <div class="items col-5 col-sm-5 col-md-6 col-lg-12 col-xl-12"><a id="wedding" class="custom_a"  href="" onclick="disp1(this.id)">Wedding</a></div>
+    <div class="items col-5 col-sm-5 col-md-6 col-lg-12 col-xl-12"><a id="anniversery_party" class="custom_a"  href="" onclick="disp1(this.id)">Anniversery Party</a></div>
+    <div class="items col-5 col-sm-5 col-md-6 col-lg-12 col-xl-12"><a id="birthday_party" class="custom_a"  href="" onclick="disp1(this.id)">Birthday Party</a></div>
+    <div class="items col-5 col-sm-5 col-md-6 col-lg-12 col-xl-12"><a id="Farewell_party" class="custom_a"  href="" onclick="disp1(this.id)">Farewell Party </a></div>
+    <div class="items col-5 col-sm-5 col-md-6 col-lg-12 col-xl-12"><a id="Halloween_party" class="custom_a"  href="" onclick="disp1(this.id)">Halloween Party</a></div>
+    <div class="items col-5 col-sm-5 col-md-6 col-lg-12 col-xl-12"><a id="Concert" class="custom_a"  href="" onclick="disp1(this.id)">Concert</a></div>
+
+    <div class="row slidebar_items_row list-group">
+        <a href="#" class="customa_a  list-group-item-action items">Wedding<i class="fa fa-trash"></i></a>
+        <a href="#" class="customa_a  list-group-item-action items">Anniversery Party<i class="fa fa-trash"></i></a>
+        <a href="#" class="customa_a  list-group-item-action items">Birthday Party<i class="fa fa-trash"></i></a>
+        <a href="#" class="customa_a  list-group-item-action items">Farewell Party<i class="fa fa-trash"></i></a>
+        <a href="#" class="customa_a  list-group-item-action items">Halloween Party<i class="fa fa-trash"></i></a>
+        <a href="#" class="customa_a  list-group-item-action items">Concert<i class="fa fa-trash"></i></a>
+    </div>-->
+                <!--</div>-->
+                <ul class="list-items">
+                    <li class="nav-item "><a class="nav-link list-group-item-action show" data-toggle="tab" href="#wedding" onclick="disp1()">Wedding</a><button class="btn  btn-sm rounded-0 " type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash btn_delete"></i></button></li>
+                    <li class="nav-item"><a class="nav-link list-group-item-action" data-toggle="tab" href="#anniversery_party" onclick="disp2()">Anniversery Party</a><button class="btn  btn-sm rounded-0 " type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash btn_delete"></i></button></li>
+                    <li class="nav-item"><a class="nav-link list-group-item-action" data-toggle="tab" href="#birthday_party" onclick="disp3()">Birthday Party</a><button class="btn  btn-sm rounded-0 " type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash btn_delete"></i></button></li>
+                    <li class="nav-item"><a class="nav-link list-group-item-action" data-toggle="tab" href="#Farewell_party" onclick="disp3()">Farewell Party </a><button class="btn  btn-sm rounded-0 " type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash btn_delete"></i></button></li>
+                    <li class="nav-item"><a class="nav-link list-group-item-action" data-toggle="tab" href="#Halloween_party">Halloween Party</a><button class="btn  btn-sm rounded-0 " type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash btn_delete"></i></button></li>
+                    <li class="nav-item"><a class="nav-link list-group-item-action" data-toggle="tab" href="#Concert">Concert</a><button class="btn  btn-sm rounded-0 " type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash btn_delete"></i></button></li>
+                    <li class="nav-item plus_li" data-toggle="tooltip" title="Click here to add new Category"><a href="" class="nav-link plus_a" data-toggle="tooltip" title="Click here to add new Category"></a><i id="btn1" class="fa fa-plus-circle btn_plus"></i></li>
+                    
+                </ul>
             </div>
-	<!--Wedding-->
-            <div class=".col-sm-8 bg-color" id="wedding">
-				<h1>Wedding</h1>
-				
-				
-	<div class="flipping-card-wrapper">
-            <div class="flipping-card-item-wrapper">
-                <div class="flipping-card-item-side flipping-card-item-side-front">
-                    <img src="6.jpg" alt="" class="flipping-card-item-img">
-                </div>
-                <div class="flipping-card-item-side flipping-card-item-side-back">
-                    <div class="flipping-card-back-wrapper">
-                        <h2>PLATINUM<br>package</h2>
-                        <button class="flipping-card-back-wrapper__btn">click</button>
-                    </div>
-                </div>
-			</div>
-        
-
-            <div class="flipping-card-item-wrapper">
-                <div class="flipping-card-item-side flipping-card-item-side-front">
-                    <img src="5.jpg" alt="" class="flipping-card-item-img">
-                </div>
-                <div class="flipping-card-item-side flipping-card-item-side-back">
-                    <div class="flipping-card-back-wrapper">
-						<h2>GOLD<br>package</h2>
-                        <button class="flipping-card-back-wrapper__btn">click</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flipping-card-item-wrapper">
-                <div class="flipping-card-item-side flipping-card-item-side-front">
-                    <img src="22.jpg" alt="" class="flipping-card-item-img">
-                </div>
-                <div class="flipping-card-item-side flipping-card-item-side-back">
-                    <div class="flipping-card-back-wrapper">
-                        <h2>SILVER<br>package</h2>
-                        <button class="flipping-card-back-wrapper__btn">click</button>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 bg_custom">
+                <h1>Wedding</h1>
+                <div class="flipping-card-wrapper">
+                    <div class="flipping-card-item-wrapper">
+                        <div class="flipping-card-item-side flipping-card-item-side-front platinum">
+                            <img src="6.jpg" alt="" class="flipping-card-item-img">
+                            <h4>PLATINUM<br>package</h4>
+                        </div>
+                        <div class="flipping-card-item-side flipping-card-item-side-back platinum_back">
+                            <div class="flipping-card-back-wrapper">
+                               <h3>Price</h3> 
+                               <h5>Click to see package details</h5>
+                            </div>
+                        </div>
                     </div>
 
-                </div>
-            </div>
-        
-		
-		<div class="flipping-card-item-wrapper">
-			<div class="flipping-card-item-side flipping-card-item-side-front">
-				<img src="44.jpg" alt="" class="flipping-card-item-img">
-			</div>
-			<div class="flipping-card-item-side flipping-card-item-side-back">
-				<div class="flipping-card-back-wrapper">
-					<h2>BRONZE<br>package</h2>
-					<button class="flipping-card-back-wrapper__btn">click</button>
-				</div>
 
-			</div>
-		</div>
-	</div>
+                    <div class="flipping-card-item-wrapper">
+                        <div class="flipping-card-item-side flipping-card-item-side-front gold">
+                            <img src="5.jpg" alt="" class="flipping-card-item-img">
+                            <h4>GOLD<br>package</h4>
+                        </div>
+                        <div class="flipping-card-item-side flipping-card-item-side-back gold_back">
+                            <div class="flipping-card-back-wrapper">
+                                <h3>Price</h3>
+                                <h5>Click to see package details</h5>
 
-	</div>
-		
-	<!--anniversery_party-->
-	<div class=".col-sm-8 bg-color bg-dark" id="anniversery_party">
-	<div class="flipping-card-wrapper">
-            <div class="flipping-card-item-wrapper">
-                <div class="flipping-card-item-side flipping-card-item-side-front">
-                    <img src="6.jpg" alt="" class="flipping-card-item-img">
-                </div>
-                <div class="flipping-card-item-side flipping-card-item-side-back">
-                    <div class="flipping-card-back-wrapper">
-                        <h2>PLATINUM<br>package</h2>
-                        <button class="flipping-card-back-wrapper__btn">click</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-			</div>
-        
 
-            <div class="flipping-card-item-wrapper">
-                <div class="flipping-card-item-side flipping-card-item-side-front">
-                    <img src="5.jpg" alt="" class="flipping-card-item-img">
-                </div>
-                <div class="flipping-card-item-side flipping-card-item-side-back">
-                    <div class="flipping-card-back-wrapper">
-						<h2>GOLD<br>package</h2>
-                        <button class="flipping-card-back-wrapper__btn">click</button>
+                    <div class="flipping-card-item-wrapper">
+                        <div class="flipping-card-item-side flipping-card-item-side-front silver">
+                            <img src="22.jpg" alt="" class="flipping-card-item-img">
+                            <h4>SILVER<br>package</h4>
+                        </div>
+                        <div class="flipping-card-item-side flipping-card-item-side-back silver_back">
+                            <div class="flipping-card-back-wrapper">
+                                <h3>Price</h3>
+                                <h5>Click to see package details</h5>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="flipping-card-item-wrapper">
+                        <div class="flipping-card-item-side flipping-card-item-side-front bronze">
+                            <img src="44.jpg" alt="" class="flipping-card-item-img">
+                            <h4>BRONZE<br>package</h4>
+                        </div>
+                        <div class="flipping-card-item-side flipping-card-item-side-back bronze_back">
+                            <div class="flipping-card-back-wrapper ">
+                                <h3>Price</h3>
+                                <h5>Click to see package details</h5>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <div class="flipping-card-item-wrapper">
-                <div class="flipping-card-item-side flipping-card-item-side-front">
-                    <img src="22.jpg" alt="" class="flipping-card-item-img">
-                </div>
-                <div class="flipping-card-item-side flipping-card-item-side-back">
-                    <div class="flipping-card-back-wrapper">
-                        <h2>SILVER<br>package</h2>
-                        <button class="flipping-card-back-wrapper__btn">click</button>
-                    </div>
+    <!--Footer-->
 
-                </div>
+    <div class="footer">
+        <div class="row">
+            <div class="col-sm-4">
+                <h5>Our Mission</h5>
+                <p>
+                    Our unique sense of wonder and romance combined with our knowledge of the area will create
+                    unforgettable memories for you in a city steeped in culture.
+                    EventHelper.com has been putting together upscale Weddings,
+                    Events and Travel Itineraries with thoughtful
+                    and personally curated details in the heart of the city.
+                </p>
             </div>
-        
-		
-		<div class="flipping-card-item-wrapper">
-			<div class="flipping-card-item-side flipping-card-item-side-front">
-				<img src="44.jpg" alt="" class="flipping-card-item-img">
-			</div>
-			<div class="flipping-card-item-side flipping-card-item-side-back">
-				<div class="flipping-card-back-wrapper">
-					<h2>BRONZE<br>package</h2>
-					<button class="flipping-card-back-wrapper__btn">click</button>
-				</div>
+            <div class="col-sm-4">
 
-			</div>
-		</div>
-	</div>
-	</div>	
-	
+            </div>
+
+            <div class="col-sm-4">
+                <h5> Contact us : </h5>
+                (+94)77 333 555<br>
+                (+94)11 288 555 <br>
+                <h5> Address: </h5>
+                220 , Paradise Road, Co. 07
+                <h5>   Email : </h5>
+                Eventhelpercom@gmail.com
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#" class="fa fa-facebook"></a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <a href="#">Terms of Use</a>
+                |
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div><!--Footer end-->
+
+
 
 
 

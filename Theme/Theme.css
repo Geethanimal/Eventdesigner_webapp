@@ -1,4 +1,3 @@
-
 /* CSS Document */
 html, body {
     letter-spacing: 0.7px;
@@ -13,7 +12,6 @@ nav {
 #sidebar {
     position: relative;
     height: 400px;
-
     background: rgb(1, 5, 34);
     margin-top: 55px;
 }
@@ -21,10 +19,9 @@ nav {
 .list-items {
     position: relative;
     background: #030324;
-
     height: 100%;
     list-style: none;
-    margin-left:5px;
+    margin-left: 5px;
 }
 
     .list-items li {
@@ -84,6 +81,7 @@ h1 {
     font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
     font-size: 50px;
 }
+
 * {
     margin: 0;
     padding: 0;
